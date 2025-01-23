@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Curiculumvita2025/static/css/main.a9dc7f71.css",
-    "main.js": "/Curiculumvita2025/static/js/main.b3c5e9ec.js",
+    "main.js": "/Curiculumvita2025/static/js/main.f4fa2e6a.js",
     "static/js/453.b4d2360d.chunk.js": "/Curiculumvita2025/static/js/453.b4d2360d.chunk.js",
     "static/media/128905298.jpg": "/Curiculumvita2025/static/media/128905298.8b553354f4d50d98811b.jpg",
     "index.html": "/Curiculumvita2025/index.html",
     "main.a9dc7f71.css.map": "/Curiculumvita2025/static/css/main.a9dc7f71.css.map",
-    "main.b3c5e9ec.js.map": "/Curiculumvita2025/static/js/main.b3c5e9ec.js.map",
+    "main.f4fa2e6a.js.map": "/Curiculumvita2025/static/js/main.f4fa2e6a.js.map",
     "453.b4d2360d.chunk.js.map": "/Curiculumvita2025/static/js/453.b4d2360d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a9dc7f71.css",
-    "static/js/main.b3c5e9ec.js"
+    "static/js/main.f4fa2e6a.js"
   ]
 }
