@@ -1,0 +1,149 @@
+{
+  "manager": {
+    "name": "CHEF DE PROJET / SCRUM MASTER",
+    "location": "Paris",
+    "phone": "06.95.59.86.42",
+    "github": "https://github.com/DjennadRany",
+    "profile": "Scrum Master certifié et Chef de Projet Technique avec plus de 10 ans d’expérience dans la gestion de projets digitaux complexes. Spécialiste des méthodologies Agile (Scrum, Kanban), des migrations technologiques (CMS, cloud) et de l’intégration CI/CD. Expertise en leadership Agile, optimisation des performances des équipes et amélioration continue des processus. Passionné par la gestion de projets à fort impact, je réduis les délais de livraison, booste la collaboration inter-équipes et maximise la performance avec une approche centrée sur l'utilisateur. Mon expertise technique combinée à ma capacité à coacher les équipes me permet de générer des résultats concrets : augmentation de la productivité de 20 % et réduction des délais de livraison de 30 %.",
+    "skills": [
+      "JavaScript (ES6+)", "TypeScript", "Java", "PHP8", "Node.js", "SQL", "NoSQL", "HTML5", "CSS3", "XML"
+    ],
+    "frameworks": [
+      "React.js", "Angular12+", "Vue.js", "Java Spring Boot", "Express.js", "NestJS", "ReduxJS", "3DJS"
+    ],
+    "cms": [
+      "Adobe Experience Manager (AEM)", "WordPress", "Joomla", "Syphon", "Laravel"
+    ],
+    "cloud": [
+      "AWS (EC2, S3, Lambda, RDS, API Gateway)", "Docker", "Kubernetes", "CI/CD", "Jenkins", "GitLab CI"
+    ],
+    "databases": [
+      "MongoDB", "MySQL", "PostgreSQL", "Redis"
+    ],
+    "tools": [
+      "Jira", "Confluence", "Git", "Postman", "Swagger", "Visual Studio Code", "IntelliJ", "Nginx"
+    ],
+    "methodologies": [
+      "Agile (Scrum/Kanban)", "Design Patterns", "Test Driven Development (TDD)", "Pair Programming", "Continuous Integration"
+    ],
+    "experience": [
+      {
+        "company": "BNP Paribas Entreprises BDDF",
+        "role": "Chef de Projet Technique",
+        "years": "2018 – 2023",
+        "details": "Gestion Agile : Création et gestion du backlog sous Jira et Confluence, coaching des équipes Scrum et mise en place de rituels Agile (Daily, Sprint Planning, Rétrospectives), augmentant la productivité de 20 % et améliorant la satisfaction des parties prenantes. Migration CMS : Pilotage de la migration d'Autonomy vers Adobe Experience Manager (AEM), réduisant les coûts de maintenance de 25 % et augmentant la scalabilité du système, tout en réduisant de 40 % le temps de maintenance post-migration. Optimisation des Processus : Mise en place d’une infrastructure CI/CD robuste, diminuant les délais de déploiement de 40 % et augmentant la qualité des livraisons. Performance et UX/UI : Collaboration avec les équipes UX/UI pour une refonte des interfaces, réduisant de 15 % le taux d’abandon et augmentant le taux de conversion client de 15 %. Leadership Agile : Coaching de 5 équipes Scrum, favorisant l'amélioration continue et la collaboration inter-équipes, optimisant les délais de livraison et les performances."
+      },
+      {
+        "company": "EDF",
+        "role": "Front-End Developer",
+        "years": "Octobre 2017 – Mars 2018",
+        "details": "Optimisation des performances : Réduction du temps de chargement des pages critiques de 15 % en développant des pages sous AEM, optimisant ainsi l'expérience utilisateur. Développement d'interfaces web fluides et performantes avec Angular 5, HTML5 et CSS3."
+      },
+      {
+        "company": "BNP Paribas – Hello Bank",
+        "role": "Développeur Full-Stack",
+        "years": "Mars 2017 – Octobre 2017",
+        "details": "Livraison 100 % des fonctionnalités dans les délais impartis grâce à des sprints Scrum de 3 semaines. Développement d’interfaces dynamiques via AngularJS et API REST, augmentant l’efficacité des interactions utilisateur de 20 %."
+      },
+      {
+        "company": "IBM France – Crédit Agricole",
+        "role": "Designer UX/UI & Intégrateur Web",
+        "years": "Décembre 2016 – Janvier 2017",
+        "details": "Conception de wireframes et maquettes interactives pour optimiser l’ergonomie et l’expérience utilisateur dans des projets bancaires. Mise en conformité des interfaces avec les normes d’accessibilité WCAG, améliorant l’engagement utilisateur."
+      }
+    ],
+    "education": [
+      "Master Administrateur du Système d'Information – Ip-Formation, 2014-2016",
+      "Développeur Logiciel RNCP – OpenClassrooms, 2023",
+      "AWS Certified Solutions Architect – Associate – Amazon Web Services, 2024",
+      "Certified Kubernetes Administrator (CKA) – Linux Foundation, 2024",
+      "Scrum Master Certifié – Scrum Alliance, 2022"
+    ],
+    "achievements": [
+      "Leadership Agile : Coaching de 5 équipes Scrum, réduisant les délais de livraison de 30 % et augmentant la productivité de 20 %.",
+      "Amélioration des Performances : Mise en place d’une infrastructure CI/CD, réduisant de 40 % les délais de déploiement et augmentant la stabilité des livraisons.",
+      "Optimisation de l'UX/UI : Réduction de 15 % du taux d’abandon des parcours utilisateurs grâce à une approche centrée sur l’utilisateur et à des tests A/B.",
+      "Migration réussie : Pilotage de la migration vers Adobe Experience Manager, réduisant les coûts de maintenance de 25 % et augmentant la scalabilité de la plateforme."
+    ],
+    "languages": [
+      "Français : Langue maternelle",
+      "Anglais : Niveau C1 (courant)"
+    ],
+    "interests": [
+      "Arts martiaux : Ceinture violette de Jiu-Jitsu Brésilien (Vice-champion Abu Dhabi Pro et Open Normandie)."
+    ]
+  },
+  "developer": {
+    "name": "DEVELOPPEUR FULLSTACK",
+    "location": "2 Square de la Vendée, Paris",
+    "phone": "06.95.59.86.42",
+    "email": "Djennad.ar@gmail.com",
+    "github": "https://github.com/DjennadRany",
+    "profile": "Développeur Fullstack avec plus de 10 ans d'expérience dans la conception et la mise en œuvre de solutions logicielles complexes. Expert en développement web, architecture de micro services et optimisation des performances, passionné par la création d’applications évolutives, performantes et sécurisées. ✔ Réduction des délais de livraison de 30 % grâce à la mise en œuvre de pipelines CI/CD et d'une organisation Agile. ✔ Amélioration de la qualité du code de 25 % via des pratiques DevOps rigoureuses et des tests automatisés.",
+    "skills": [
+      "JavaScript (ES6+)", "TypeScript", "Java", "PHP8", "Node.js", "SQL", "NoSQL", "HTML5", "CSS3"
+    ],
+    "frameworks": [
+      "React.js", "Angular12+", "Vue.js", "Java Spring Boot", "Express.js", "NestJS", "ReduxJS"
+    ],
+    "architecture": [
+      "Microservices", "RESTful APIs", "Serverless", "Event-Driven Architecture", "GraphQL"
+    ],
+    "cloud": [
+      "AWS (EC2, S3, Lambda, RDS, API Gateway)", "Docker", "Kubernetes", "CI/CD", "Jenkins", "GitLab CI"
+    ],
+    "databases": [
+      "MongoDB", "MySQL", "PostgreSQL", "Redis"
+    ],
+    "tools": [
+      "Jira", "Confluence", "Git", "Docker", "Postman", "Swagger", "Visual Studio Code", "IntelliJ", "Nginx"
+    ],
+    "methodologies": [
+      "Agile (Scrum/Kanban)", "Design Patterns", "TDD (Test Driven Development)", "Pair Programming"
+    ],
+    "experience": [
+      {
+        "company": "BNP Paribas",
+        "role": "Fullstack Developer",
+        "years": "2018 – 2023",
+        "details": "Leadership Technique : Conception et supervision d'architectures d’applications scalables et sécurisées avec DevOps. Gestion d'Équipe : Coordination d’une équipe de 10 développeurs avec pair programming, code reviews et coaching Agile. Migration et Optimisation : Déploiement d’une architecture microservices AWS, réduisant les coûts de 20 % et augmentant la performance de 25 %. CI/CD : Mise en œuvre de pipelines d'intégration et déploiement continu, améliorant la qualité du code et réduisant les délais de livraison."
+      },
+      {
+        "company": "EDF",
+        "role": "Fullstack Developer",
+        "years": "Octobre 2017 – Mars 2018",
+        "details": "Refonte d’une application clé sous Angular et Node.js, augmentant la rapidité de 40 %. Coaching Agile et tests automatisés, réduisant les erreurs utilisateurs de 15 %."
+      },
+      {
+        "company": "BNP Paribas – Hello Bank",
+        "role": "Fullstack Developer",
+        "years": "Mars 2017 – Octobre 2017",
+        "details": "Création de fonctionnalités front-end/back-end (AngularJS, Node.js, MongoDB), réduisant les temps de chargement de 25 %. Conception d’API RESTful améliorant l’expérience utilisateur de 15 %."
+      },
+      {
+        "company": "IBM France – Crédit Agricole",
+        "role": "Développeur Front-End",
+        "years": "Décembre 2016 – Janvier 2017",
+        "details": "Développement d’interfaces UX interactives (HTML5, LESS, jQuery), augmentant l’engagement utilisateur de 20 %. Amélioration de l'accessibilité selon les normes WCAG."
+      }
+    ],
+    "education": [
+      "Master Administrateur du Système d'Information – Ip-Formation, 2014-2016 (Niveau 7)",
+      "Développeur Logiciel RNCP – OpenClassrooms, 2023 (Niveau 6)",
+      "AWS Certified Solutions Architect – Associate – Amazon Web Services, 2024"
+    ],
+    "achievements": [
+      "Architecture Micro services : Déploiement d'une architecture AWS Serverless, réduisant les coûts et augmentant la performance.",
+      "Leadership Agile : Coaching d’équipes Scrum, augmentant la productivité de 20 %.",
+      "Améliorations Systèmes : Optimisation des applications avec Node.js et AWS Lambda, réduisant les délais de traitement de 25 %."
+    ],
+    "languages": [
+      "Français : Langue maternelle",
+      "Anglais : Courant (niveau C1)"
+    ],
+    "interests": [
+      "Technologies : Passionné par le Cloud, AWS, Kubernetes, et les pratiques DevOps.",
+      "Sports : Ceinture violette de Jiu-Jitsu Brésilien (Vice-champion Abu Dhabi Pro, Open Normandie)."
+    ]
+  }
+}
