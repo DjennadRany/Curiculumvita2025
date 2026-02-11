@@ -1,0 +1,63 @@
+{
+  "experiences": [
+    {
+      "company": "MINISTÈRE DES ARMÉES",
+      "role": "Technical Project Manager",
+      "dates": "2024 – 2025",
+      "location": "Environnement classifié — Secret Défense",
+      "description": "Pilotage technique en contexte institutionnel sécurisé à fortes contraintes de sécurité, traçabilité, conformité et continuité de service, recueil et structuration des besoins métiers, cadrage technique, rédaction de spécifications et notes de cadrage, gouvernance projet, comités et reporting, suivi des risques, pilotage des dépendances inter-équipes, coordination des équipes techniques internes et prestataires externes, planification des phases projet, suivi des livrables et jalons, supervision des recettes, validation conformité avant mise en production, intégration des exigences de sécurité dans le cycle de delivery, méthodologie Agile adaptée au contexte réglementaire.",
+      "techTags": ["Environnement classifié", "Gouvernance projet", "Conformité", "Agile"],
+      "classifiedStack": true
+    },
+    {
+      "company": "BNP PARIBAS — BDDF ENTREPRISE (Retail)",
+      "role": "Technical Project Manager / Technical Lead",
+      "dates": "2018 – 2023",
+      "description": "Périmètre MaBanqueEntreprise transactionnel B2B, MaBanqueEntreprise informationnel, Campagne Transformation Digitale, Arval, Transcash, environnement bancaire critique interconnecté au SI central, intégration SI bancaire, organisation 5 développeurs fullstack Retail, 8 développeurs back-end DSI, TMA externalisée ~50 personnes Maroc, collaboration PO, équipes SI, UX/UI, exploitation, sécurité, analyse de faisabilité et veille technologique, conception des maquettes techniques et premiers incréments, industrialisation par DSI et TMA, validation technique des livraisons avant qualification et production, gestion environnements Dev, Qualif, Production, validation des pushes en production, migration CMS Autonomy vers Adobe Experience Manager AEM, configuration DAM, ClientLibs, Dispatcher, Apache Sling, OSGi, HTL, création de packages AEM via Maven, architecture basée sur Servlet container, développement services REST Java Spring Boot, intégration PostgreSQL RDS, développement Angular 12 et React, intégration HTML5, CSS3, JavaScript ES6+, mise en place pipelines CI/CD Jenkins et GitLab CI, gestion Docker et Terraform, standards qualité SonarQube, ESLint, Jest, Mocha, Chai, optimisation cache et ClientLibs, dashboards Google Analytics, Tag Manager, Data Studio, reporting mensuel, animation Agile Scrum/Kanban sprints 3 semaines, structuration backlog.",
+      "kpis": ["Productivité +20 %", "Réduction délais de livraison -30 %", "Réduction délais de déploiement -40 %"],
+      "techTags": ["AEM", "Sling", "OSGi", "HTL", "Dispatcher", "Spring Boot", "Servlet container", "CI/CD", "Docker", "Terraform", "PostgreSQL RDS"]
+    },
+    {
+      "company": "EDF — Retail",
+      "role": "Chef de Projet / Front-End Developer",
+      "dates": "Octobre 2017 – Mars 2018",
+      "description": "Projet edf.fr espace client, plateforme grand public à fort trafic intégrée au SI EDF, équipe DSI ~50 personnes, rôle hybride coordination et exécution front-end, intégration AEM, développement HTML5, CSS3, JavaScript ES6, Angular 5, optimisation UX avec équipes design, coordination front/back pour intégration des APIs, gestion backlog Jira, cérémonies Agile Scrum/Kanban sprints 2 semaines, mise en place tests automatisés et standards ESLint, SonarQube, réduction du temps de chargement des pages critiques de 15 %, amélioration de l’expérience utilisateur.",
+      "techTags": ["AEM", "Angular 5", "ESLint", "SonarQube", "Jira"]
+    },
+    {
+      "company": "BNP PARIBAS — HELLO BANK",
+      "role": "Front-End Developer / Fullstack Developer",
+      "dates": "Mars 2017 – Octobre 2017",
+      "description": "Projets Retail application de demande de crédit immobilier en ligne et projet Servicime, environnement bancaire grand public avec forte exigence UX, organisation 8 développeurs fullstack par projet, ~20 développeurs Retail, collaboration PO, UX/UI, back-end Laravel, CMS Syphonie, Scrum Master par projet, développement Angular 5, HTML5, CSS3, SASS, JavaScript ES6+, AngularJS, intégration APIs JSON, développement de fonctionnalités front-end/back-end, API REST, Node.js, développement du footer Hello Bank et d’un slider interactif avec icônes dynamiques, optimisation interactions utilisateurs, respect responsive et accessibilité, CI/CD Jenkins et GitLab CI, versioning GitLab et GitHub, standards qualité Jest, SonarQube, sprints Scrum 3 semaines, livraison 100 % des fonctionnalités dans les délais, amélioration des interactions utilisateur +20 % et réduction des temps de chargement -25 %.",
+      "techTags": ["Angular 5", "AngularJS", "Laravel", "Syphonie", "CI/CD", "Jenkins", "GitLab CI"]
+    },
+    {
+      "company": "IBM FRANCE LAB — CRÉDIT AGRICOLE",
+      "role": "Chef de Projet Front-End / Intégrateur AEM / UX/UI",
+      "dates": "Décembre 2016 – Janvier 2017",
+      "description": "Refonte des sites Crédit Agricole Prospect, Pro, Entreprise, environnement bancaire structuré, équipe ~30 développeurs Lille, collaboration Retail Paris, Agile Scrum/Kanban sprints 2 semaines, conception maquettes HTML, CSS, SASS, JavaScript ES6+, jQuery, découpage composants pour intégration AEM, préparation incréments AEM, cohérence UX/UI, coordination livraisons front, validation avant intégration, AEM Dispatcher, Apache HTTP Server, Jira, Confluence, conformité accessibilité WCAG, augmentation engagement utilisateur +20 %.",
+      "techTags": ["AEM", "Dispatcher", "Apache HTTP Server", "Jira", "Confluence"]
+    },
+    {
+      "company": "VENTE-PRIVEE.COM",
+      "role": "Intégrateur Web – Production des Ventes",
+      "dates": "Juin 2016 – Novembre 2016",
+      "description": "Département Production des Ventes, e-commerce à très fort volume, équipe 8 développeurs/intégrateurs, création et maintenance fiches produits, intégration HTML5, CSS3, JavaScript, jQuery, CMS interne propriétaire, cellule de débogage, correction rapide des erreurs, automatisations de correction massive jusqu’à 5000 pages produits, optimisation structures modèles pour performance et cohérence, collaboration marketing, production en flux continu.",
+      "techTags": ["HTML5", "CSS3", "JavaScript", "jQuery", "CMS interne"]
+    },
+    {
+      "company": "LA BROSSE & DUPONT",
+      "role": "Chef de Projet Digital / Webmaster",
+      "dates": "Mai 2015 – Septembre 2015",
+      "description": "Groupe industriel multi-marques fondé en 1845, gestion technique du parc de sites web, recueil besoins et cadrage, analyse cahiers des charges, traduction en spécifications techniques, planification évolutions, conception et intégration HTML5, CSS3, JavaScript, personnalisation WordPress et Joomla, développement fonctionnalités spécifiques, optimisation SEO on-page, amélioration performances, coordination marketing, design et technique, déploiements en production et gestion contenus.",
+      "techTags": ["WordPress", "Joomla", "SEO", "HTML5", "CSS3"]
+    },
+    {
+      "company": "WHOSNET",
+      "role": "Webmaster / Développeur Fullstack",
+      "dates": "Septembre 2013 – Janvier 2014",
+      "description": "Projets clients variés, développement front-end HTML5, CSS3, JavaScript, back-end PHP, bases MySQL, intégration templates et maquettes, personnalisation WordPress, déploiement Prestashop, gestion thèmes, plugins et extensions, configuration hébergement, mise en production, maintenance corrective, optimisation structure et performance, support technique client.",
+      "techTags": ["PHP", "MySQL", "WordPress", "Prestashop", "HTML5"]
+    }
+  ]
+}

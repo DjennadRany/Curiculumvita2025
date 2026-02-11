@@ -1,0 +1,76 @@
+{
+  "projects": [
+    {
+      "title": "factureDevis",
+      "objectiveFunctional": "Application métier de gestion de devis et facturation avec génération dynamique de documents, calculs et manipulation d’objets métier.",
+      "objectiveTechnical": "Structuration modulaire front-end JavaScript, logique métier côté client et interactions utilisateur dynamiques.",
+      "stack": ["JavaScript", "HTML5", "CSS3"],
+      "architecture": "Front-end modulaire, logique métier calculs et génération, UI dynamique.",
+      "structure": "Modules JS/CSS, séparation logique métier et rendu.",
+      "stateManagement": "State local par modules.",
+      "deployment": "GitHub Pages",
+      "links": {
+        "github": "https://github.com/DjennadRany/factureDevis",
+        "live": "https://djennadrany.github.io/factureDevis/"
+      }
+    },
+    {
+      "title": "CrustyCrypto",
+      "objectiveFunctional": "Dashboard crypto avec données temps réel et score de volatilité.",
+      "objectiveTechnical": "Consommation API, gestion asynchrone, visualisation et rendu data-driven avec gestion des erreurs.",
+      "stack": ["JavaScript", "HTML", "CSS"],
+      "architecture": "Front-end data-driven, appels API et rendu dynamique.",
+      "structure": "Scripts métiers + couches d’affichage et UI.",
+      "stateManagement": "State local géré par scripts.",
+      "deployment": "GitHub Pages",
+      "links": {
+        "github": "https://github.com/DjennadRany/CrustyCrypto",
+        "live": "https://djennadrany.github.io/CrustyCrypto/"
+      }
+    },
+    {
+      "title": "PublicServ",
+      "objectiveFunctional": "Application orientée service public, logique fonctionnelle structurée.",
+      "objectiveTechnical": "Structuration front-end modulaire et gestion du contenu.",
+      "stack": ["JavaScript", "HTML", "CSS"],
+      "architecture": "Front-end modulaire.",
+      "structure": "Organisation par composants et sections.",
+      "stateManagement": "State local simple.",
+      "deployment": "GitHub Pages",
+      "links": {
+        "github": "https://github.com/DjennadRany/PublicServ",
+        "live": "https://djennadrany.github.io/PublicServ/"
+      }
+    },
+    {
+      "title": "React-moteur-de-recherche-manga",
+      "objectiveFunctional": "Moteur de recherche dynamique avec filtrage et manipulation de data.",
+      "objectiveTechnical": "Architecture SPA, gestion du state, structure composants et routing.",
+      "stack": ["React", "JavaScript", "HTML", "CSS"],
+      "architecture": "SPA React, composants réutilisables et filtrage data.",
+      "structure": "src/components, src/pages, hooks, data.",
+      "stateManagement": "State local React (useState, useEffect).",
+      "routing": "React Router",
+      "deployment": "GitHub Pages",
+      "links": {
+        "github": "https://github.com/DjennadRany/React-moteur-de-recherche-manga",
+        "live": "https://djennadrany.github.io/React-moteur-de-recherche-manga/"
+      }
+    },
+    {
+      "title": "Curiculumvita2025 — Case Study",
+      "objectiveFunctional": "CV multi-rôles et navigation structurée.",
+      "objectiveTechnical": "Structuration JSON, routing, modules, EmailJS, animations Framer Motion.",
+      "stack": ["React", "React Router", "React Bootstrap", "Framer Motion", "React Circular Progressbar", "React Icons", "EmailJS", "JSON", "HTML5", "CSS3", "JavaScript"],
+      "architecture": "SPA avec modules CV et contenus data-driven.",
+      "structure": "src/pages, src/components, src/data, styles.",
+      "stateManagement": "State local et hooks.",
+      "routing": "React Router",
+      "deployment": "GitHub Pages",
+      "links": {
+        "github": "https://github.com/DjennadRany/Curiculumvita2025",
+        "live": "https://djennadrany.github.io/Curiculumvita2025/"
+      }
+    }
+  ]
+}

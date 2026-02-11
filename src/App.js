@@ -1,27 +1,22 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './components/Header';
-import Navigation from './components/Navigation';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import SiteLayout from './layout/SiteLayout';
 import Home from './pages/Home';
-import CVManager from './pages/CVManager';
-import CVDeveloper from './pages/CVDeveloper';
-import TechNews from './pages/TechNews';
+import Experience from './pages/Experience';
+import Projects from './pages/Projects';
 import Contact from './pages/Contact';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   return (
     <Router>
-      <Header />
-      <Navigation />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/cv-manager" element={<CVManager />} />
-        <Route path="/cv-developer" element={<CVDeveloper />} />
-        <Route path="/tech-news" element={<TechNews />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <SiteLayout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </SiteLayout>
     </Router>
   );
 };

@@ -1,0 +1,40 @@
+{
+  "categories": [
+    {
+      "title": "Langages et standards",
+      "items": ["JavaScript ES6+", "TypeScript", "Java", "PHP8", "SQL", "NoSQL", "HTML5", "CSS3", "XML", "LESS", "SASS"]
+    },
+    {
+      "title": "Front-end et UI",
+      "items": ["React.js", "Angular 5", "Angular 12+", "AngularJS", "Vue.js", "ReduxJS", "jQuery", "Bootstrap", "D3.js", "Responsive", "Accessibilité WCAG", "UX/UI"]
+    },
+    {
+      "title": "Back-end, APIs et intégration",
+      "items": ["Java Spring Boot", "Node.js", "Express.js", "NestJS", "RESTful APIs", "API JSON", "Servlet container", "Intégration SI bancaire"]
+    },
+    {
+      "title": "CMS et plateformes",
+      "items": ["Adobe Experience Manager AEM", "HTL", "OSGi", "Apache Sling", "ClientLibs", "DAM", "Dispatcher", "AEM Dispatcher", "WordPress", "Joomla", "Autonomy", "CMS interne Vente-Privée", "Syphonie", "Laravel"]
+    },
+    {
+      "title": "DevOps et CI/CD",
+      "items": ["Docker", "Terraform", "Jenkins", "GitLab CI", "Continuous Integration", "Dev", "Qualif", "Production"]
+    },
+    {
+      "title": "Bases de données",
+      "items": ["PostgreSQL", "PostgreSQL RDS", "MySQL", "Redis"]
+    },
+    {
+      "title": "Qualité, tests et analytics",
+      "items": ["SonarQube", "ESLint", "Jest", "Mocha", "Chai", "TDD", "Pair Programming", "Google Analytics", "Tag Manager", "Data Studio"]
+    },
+    {
+      "title": "Outils et collaboration",
+      "items": ["Git", "GitLab", "GitHub", "Maven", "Jira", "Confluence", "Postman", "Swagger", "Visual Studio Code", "IntelliJ", "Nginx", "Slack", "ATOM", "CodeKit"]
+    },
+    {
+      "title": "Méthodologies et gouvernance",
+      "items": ["Agile Scrum", "Kanban", "Rituels Agile", "Backlog", "Reporting", "Gestion des risques", "Coordination transverse"]
+    }
+  ]
+}

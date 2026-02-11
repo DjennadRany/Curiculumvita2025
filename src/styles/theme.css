@@ -1,0 +1,37 @@
+:root {
+  --bg: #0f1115;
+  --surface: #171a21;
+  --card: #1d2029;
+  --text: #f4f4f6;
+  --text-muted: #b7bac4;
+  --primary: #66c7f4;
+  --accent: #b58cff;
+  --border: #2a2e38;
+}
+
+body.theme-light {
+  --bg: #f6f7fb;
+  --surface: #ffffff;
+  --card: #ffffff;
+  --text: #1b1f2a;
+  --text-muted: #5d6474;
+  --primary: #2563eb;
+  --accent: #7c3aed;
+  --border: #e4e6ef;
+}
+
+body.theme-dark {
+  --bg: #0f1115;
+  --surface: #171a21;
+  --card: #1d2029;
+  --text: #f4f4f6;
+  --text-muted: #b7bac4;
+  --primary: #66c7f4;
+  --accent: #b58cff;
+  --border: #2a2e38;
+}
+
+.cheat-mode .app-shell {
+  background-image: linear-gradient(transparent 95%, rgba(255, 255, 255, 0.08) 5%);
+  background-size: 24px 24px;
+}
