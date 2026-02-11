@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import { FaEnvelope, FaPhone, FaGithub, FaLinkedin, FaMapMarkerAlt } from 'react-icons/fa';
+import { Mail, Phone, Github, Linkedin, MapPin } from 'lucide-react';
 import profile from '../data/profile.json';
 
 const Contact = () => {
@@ -41,11 +41,11 @@ const Contact = () => {
   };
 
   const contactItems = [
-    profile.email && { icon: FaEnvelope, label: 'Email', value: profile.email, href: `mailto:${profile.email}` },
-    profile.phone && { icon: FaPhone, label: 'Téléphone', value: profile.phone, href: `tel:${profile.phone.replace(/\s/g, '')}` },
-    profile.github && { icon: FaGithub, label: 'GitHub', value: 'DjennadRany', href: profile.github },
-    profile.linkedin && { icon: FaLinkedin, label: 'LinkedIn', value: 'Rany Djennad', href: profile.linkedin },
-    profile.location && { icon: FaMapMarkerAlt, label: 'Localisation', value: profile.location, href: null }
+    profile.email && { icon: Mail, label: 'Email', value: profile.email, href: `mailto:${profile.email}` },
+    profile.phone && { icon: Phone, label: 'Téléphone', value: profile.phone, href: `tel:${profile.phone.replace(/\s/g, '')}` },
+    profile.github && { icon: Github, label: 'GitHub', value: 'DjennadRany', href: profile.github },
+    profile.linkedin && { icon: Linkedin, label: 'LinkedIn', value: 'Rany Djennad', href: profile.linkedin },
+    profile.location && { icon: MapPin, label: 'Localisation', value: profile.location, href: null }
   ].filter(Boolean);
 
   return (
@@ -61,7 +61,7 @@ const Contact = () => {
               {contactItems.map(({ icon: Icon, label, value, href }) => (
                 <li key={label} className="contact-list-item">
                   <span className="contact-list-icon" aria-hidden="true">
-                    <Icon />
+                    <Icon size={20} />
                   </span>
                   <span className="contact-list-content">
                     <span className="contact-list-label">{label}</span>

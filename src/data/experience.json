@@ -58,6 +58,14 @@
       "dates": "Septembre 2013 – Janvier 2014",
       "description": "Projets clients variés, développement front-end HTML5, CSS3, JavaScript, back-end PHP, bases MySQL, intégration templates et maquettes, personnalisation WordPress, déploiement Prestashop, gestion thèmes, plugins et extensions, configuration hébergement, mise en production, maintenance corrective, optimisation structure et performance, support technique client.",
       "techTags": ["PHP", "MySQL", "WordPress", "Prestashop", "HTML5"]
+    },
+    {
+      "company": "Design & Direction Artistique",
+      "role": "Graphiste / Directeur Artistique / Chargé de Communication",
+      "dates": "2010 – 2013",
+      "location": "France – New York – Londres",
+      "description": "Création d'identités visuelles, conception de supports print et digitaux, direction artistique de campagnes de communication, relation client et gestion de projet créatif de bout en bout, production et diffusion d'affiches dans l'espace public parisien, participation à des projets artistiques dont l'exposition Jardin Cristal, production de supports pour communication événementielle, recueil des besoins clients, traduction des briefs en concepts graphiques, suivi production et validation, coordination imprimeurs et prestataires, expériences Atoutprint, JLA Communication, P.E.D Pub Enseigne & Design, HypeJean, compétences UX, hiérarchie visuelle, ergonomie, communication client et gestion budgétaire.",
+      "techTags": ["Design graphique", "Direction artistique", "Communication visuelle", "Print", "Digital"]
     }
   ]
 }

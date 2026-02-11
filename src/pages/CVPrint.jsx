@@ -4,6 +4,7 @@ import experience from '../data/experience.json';
 import skills from '../data/skills.json';
 import projects from '../data/projects.json';
 import research from '../data/research.json';
+import { getStructuredContent } from '../data/experienceStructured.js';
 
 const CVPrint = () => {
   useEffect(() => {
@@ -25,7 +26,7 @@ const CVPrint = () => {
       <section className="cv-section" aria-labelledby="cv-summary-title">
         <h3 id="cv-summary-title">Résumé professionnel</h3>
         {profile.summary.map((paragraph) => (
-          <p key={paragraph}>{paragraph}</p>
+          <p key={paragraph.slice(0, 40)}>{paragraph}</p>
         ))}
       </section>
 
@@ -43,65 +44,92 @@ const CVPrint = () => {
         aria-labelledby="cv-experience-title"
       >
         <h3 id="cv-experience-title">Expérience professionnelle</h3>
-        {experience.experiences.map((exp) => (
-          <article
-            key={`${exp.company}-${exp.dates}`}
-            className="cv-item"
-            itemScope
-            itemType="https://schema.org/JobPosting"
-          >
-            <header className="cv-item-header">
-              <h2 className="cv-company" itemProp="hiringOrganization">
-                <span itemProp="name">{exp.company}</span>
-              </h2>
-              <h3 className="cv-role" itemProp="title">
-                {exp.role}
-              </h3>
-              <div className="cv-meta">
-                <span className="cv-meta-dates" itemProp="datePosted">
-                  {exp.dates}
-                </span>
-                {exp.location && (
-                  <span className="cv-meta-location" itemProp="jobLocation">
-                    {exp.location}
+        {experience.experiences.map((exp) => {
+          const structured = getStructuredContent(exp);
+          return (
+            <article
+              key={`${exp.company}-${exp.dates}`}
+              className="cv-item"
+              itemScope
+              itemType="https://schema.org/JobPosting"
+            >
+              <header className="cv-item-header">
+                <h2 className="cv-company" itemProp="hiringOrganization">
+                  <span itemProp="name">{exp.company}</span>
+                </h2>
+                <h3 className="cv-role" itemProp="title">
+                  {exp.role}
+                </h3>
+                <div className="cv-meta">
+                  <span className="cv-meta-dates" itemProp="datePosted">
+                    {exp.dates}
                   </span>
-                )}
-              </div>
-            </header>
+                  {exp.location && (
+                    <span className="cv-meta-location" itemProp="jobLocation">
+                      {exp.location}
+                    </span>
+                  )}
+                </div>
+              </header>
 
-            <p className="cv-description" itemProp="description">
-              {exp.description}
-            </p>
+              {structured.context && (
+                <p className="cv-description" itemProp="description">
+                  <strong>Contexte.</strong> {structured.context}
+                </p>
+              )}
+              {structured.positioning && (
+                <p className="cv-description">
+                  <strong>Positionnement.</strong> {structured.positioning}
+                </p>
+              )}
+              {structured.responsibilities && (
+                <p className="cv-description">
+                  <strong>Responsabilités.</strong> {structured.responsibilities}
+                </p>
+              )}
+              {structured.impact && (
+                <p className="cv-description">
+                  <strong>Impact.</strong> {structured.impact}
+                </p>
+              )}
+              {!structured.context && (
+                <p className="cv-description" itemProp="description">
+                  {exp.description}
+                </p>
+              )}
 
-            {exp.kpis && (
-              <section className="cv-kpis" aria-label="Résultats clés">
-                <h4 className="cv-kpis-title">KPI & résultats</h4>
-                <ul className="cv-kpis-list">
-                  {exp.kpis.map((kpi) => (
-                    <li key={kpi}>{kpi}</li>
-                  ))}
-                </ul>
-              </section>
-            )}
+              {exp.kpis && exp.kpis.length > 0 && (
+                <section className="cv-kpis" aria-label="Résultats clés">
+                  <h4 className="cv-kpis-title">KPI & résultats</h4>
+                  <ul className="cv-kpis-list">
+                    {exp.kpis.map((kpi) => (
+                      <li key={kpi}>{kpi}</li>
+                    ))}
+                  </ul>
+                </section>
+              )}
 
-            <section className="cv-stack" aria-label="Stack technique">
-              <h4 className="cv-stack-title">Stack & environnement</h4>
-              <div className="cv-stack-tags">
-                {exp.techTags.map((tech) => (
-                  <span key={tech} className="cv-tag">
-                    {tech}
-                  </span>
-                ))}
-              </div>
-            </section>
+              {exp.techTags && exp.techTags.length > 0 && !exp.classifiedStack && (
+                <section className="cv-stack" aria-label="Stack technique">
+                  <h4 className="cv-stack-title">Stack & environnement</h4>
+                  <div className="cv-stack-tags">
+                    {exp.techTags.map((tech) => (
+                      <span key={tech} className="cv-tag">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </section>
+              )}
 
-            {exp.classifiedStack && (
-              <p className="cv-note">
-                Environnement classifié — stack non divulguable.
-              </p>
-            )}
-          </article>
-        ))}
+              {exp.classifiedStack && (
+                <p className="cv-note">
+                  Environnement classifié — stack non divulguable.
+                </p>
+              )}
+            </article>
+          );
+        })}
       </section>
 
       <section className="cv-section">

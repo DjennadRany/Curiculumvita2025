@@ -1,6 +1,6 @@
 import React from 'react';
-import Tag from '../ui/Tag';
-import Button from '../ui/Button';
+import Tag from '../ui/Tag.jsx';
+import Button from '../ui/Button.jsx';
 
 const ProjectCard = ({ project }) => {
   return (

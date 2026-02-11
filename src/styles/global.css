@@ -2,12 +2,17 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
   background: var(--bg);
   color: var(--text);
-  transition: background 0.3s ease, color 0.3s ease;
+  line-height: 1.6;
+  min-height: 100vh;
 }
 
 a {
@@ -15,29 +20,77 @@ a {
   text-decoration: none;
 }
 
+a:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
 img {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 
 .container {
-  width: min(1120px, 92%);
+  width: 100%;
+  max-width: var(--container-max, 1080px);
   margin: 0 auto;
+  padding-left: max(var(--page-padding-min, 20px), env(safe-area-inset-left));
+  padding-right: max(var(--page-padding-min, 20px), env(safe-area-inset-right));
+}
+
+.section-container {
+  width: 100%;
+  max-width: var(--container-max, 1080px);
+  margin: 0 auto;
+  padding-left: max(var(--page-padding-min, 20px), env(safe-area-inset-left));
+  padding-right: max(var(--page-padding-min, 20px), env(safe-area-inset-right));
 }
 
 .page {
-  padding-bottom: 40px;
+  padding-bottom: var(--space-16, 64px);
+  overflow-x: hidden;
 }
 
-.section {
-  padding: 56px 0;
+.section-wrapper--alt {
+  background: var(--surface-alt, var(--surface));
 }
 
-.section.alt {
-  background: var(--surface);
+.section-header {
+  margin-bottom: var(--space-8, 32px);
+}
+
+.section-heading {
+  font-size: var(--text-h2, clamp(1.5rem, 3vw + 0.75rem, 2rem));
+  font-weight: var(--font-weight-bold, 700);
+  margin: 0 0 var(--space-4, 16px);
 }
 
 .section-intro {
-  max-width: 720px;
+  max-width: var(--text-max-width, 70ch);
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0 0 var(--space-6, 24px);
+}
+
+.section-cta {
+  margin: var(--space-6, 24px) 0 0;
+}
+
+.summary p {
+  max-width: var(--text-max-width, 70ch);
+  line-height: 1.6;
+  margin: 0 0 var(--space-4, 16px);
+}
+
+.summary p:last-child {
+  margin-bottom: 0;
+}
+
+.radar-chart--loading {
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--text-muted);
 }

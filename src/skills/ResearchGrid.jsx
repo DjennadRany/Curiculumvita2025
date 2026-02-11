@@ -12,11 +12,13 @@ const ICONS = {
   'Event-Driven Architecture': 'apacherocketmq'
 };
 
+const ICONS_CDN = 'https://cdn.jsdelivr.net/npm/simple-icons@v11/icons';
+
 const getIconUrl = (label) => {
   const key = label.split(' ')[0];
   const slug = ICONS[label] || ICONS[key];
   if (!slug) return null;
-  return `https://cdn.simpleicons.org/${slug}`;
+  return `${ICONS_CDN}/${slug}.svg`;
 };
 
 const ResearchGrid = () => {
@@ -26,7 +28,14 @@ const ResearchGrid = () => {
         const iconUrl = getIconUrl(item);
         return (
           <div className="skill-item" key={item}>
-            {iconUrl && <img src={iconUrl} alt="" className="skill-icon" />}
+            {iconUrl && (
+          <img
+            src={iconUrl}
+            alt=""
+            className="skill-icon"
+            onError={(e) => { e.currentTarget.style.display = 'none'; }}
+          />
+        )}
             <span>{item}</span>
           </div>
         );

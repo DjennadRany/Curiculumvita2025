@@ -146,6 +146,11 @@
 }
 
 @media print {
+  @page {
+    size: A4;
+    margin: 16mm 14mm;
+  }
+
   body {
     background: #ffffff;
     color: #111111;

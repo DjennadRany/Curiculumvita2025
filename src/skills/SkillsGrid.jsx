@@ -24,7 +24,7 @@ const ICONS = {
   ReduxJS: 'redux',
   jQuery: 'jquery',
   Bootstrap: 'bootstrap',
-  'D3.js': 'd3dotjs',
+  'D3.js': 'd3',
   'Java Spring Boot': 'springboot',
   'Node.js': 'nodedotjs',
   'Express.js': 'express',
@@ -50,6 +50,7 @@ const ICONS = {
   Postman: 'postman',
   Swagger: 'swagger',
   'Visual Studio Code': 'visualstudiocode',
+  'Adobe Experience Manager AEM': 'adobe',
   IntelliJ: 'intellijidea',
   Nginx: 'nginx',
   Slack: 'slack',
@@ -66,18 +67,20 @@ const ICONS = {
   'Tag Manager': 'googletagmanager'
 };
 
+const SIMPLE_ICONS_CDN = 'https://cdn.jsdelivr.net/npm/simple-icons@v11/icons';
+
 const getIconUrls = (label) => {
   const config = ICONS[label];
   if (!config) return { primary: null, fallback: null };
   if (typeof config === 'string') {
     return {
-      primary: `https://cdn.simpleicons.org/${config}`,
-      fallback: `https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/${config}.svg`
+      primary: `${SIMPLE_ICONS_CDN}/${config}.svg`,
+      fallback: null
     };
   }
   return {
-    primary: `https://cdn.simpleicons.org/${config.primary}`,
-    fallback: config.fallback || null
+    primary: config.fallback || `${SIMPLE_ICONS_CDN}/${config.primary}.svg`,
+    fallback: null
   };
 };
 
