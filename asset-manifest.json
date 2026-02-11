@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/Curiculumvita2025/static/css/main.a9dc7f71.css",
-    "main.js": "/Curiculumvita2025/static/js/main.7a721d92.js",
+    "main.css": "/Curiculumvita2025/static/css/main.7db3bbf6.css",
+    "main.js": "/Curiculumvita2025/static/js/main.6ee6da73.js",
     "static/js/453.b4d2360d.chunk.js": "/Curiculumvita2025/static/js/453.b4d2360d.chunk.js",
-    "static/media/128905298.jpg": "/Curiculumvita2025/static/media/128905298.8b553354f4d50d98811b.jpg",
+    "static/media/photo-profil.PNG": "/Curiculumvita2025/static/media/photo-profil.296624f98f14aec59f72.PNG",
+    "static/media/Djennad_rany_logo.png": "/Curiculumvita2025/static/media/Djennad_rany_logo.82f50977d01c664cf1cf.png",
+    "static/media/Logo-EDF.png": "/Curiculumvita2025/static/media/Logo-EDF.8daaacbabafc578ef095.png",
+    "static/media/logo-ministere-des-armees.png": "/Curiculumvita2025/static/media/logo-ministere-des-armees.1d34e24c0c6c8aeefae1.png",
+    "static/media/hello-bank-logo.png": "/Curiculumvita2025/static/media/hello-bank-logo.714334a8b7cdcebdd77c.png",
     "index.html": "/Curiculumvita2025/index.html",
-    "main.a9dc7f71.css.map": "/Curiculumvita2025/static/css/main.a9dc7f71.css.map",
-    "main.7a721d92.js.map": "/Curiculumvita2025/static/js/main.7a721d92.js.map",
+    "main.7db3bbf6.css.map": "/Curiculumvita2025/static/css/main.7db3bbf6.css.map",
+    "main.6ee6da73.js.map": "/Curiculumvita2025/static/js/main.6ee6da73.js.map",
     "453.b4d2360d.chunk.js.map": "/Curiculumvita2025/static/js/453.b4d2360d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a9dc7f71.css",
-    "static/js/main.7a721d92.js"
+    "static/css/main.7db3bbf6.css",
+    "static/js/main.6ee6da73.js"
   ]
 }
