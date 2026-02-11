@@ -8,14 +8,20 @@ const useCheatMode = () => {
 
   useEffect(() => {
     const handleKeydown = (event) => {
-      const key = event.key.toLowerCase();
-      const nextIndex = key === SEQUENCE[index] ? index + 1 : 0;
-      if (nextIndex === SEQUENCE.length) {
-        setCheatMode(true);
+      try {
+        const raw = event?.key;
+        if (raw == null) return;
+        const key = String(raw).toLowerCase();
+        const nextIndex = key === SEQUENCE[index] ? index + 1 : 0;
+        if (nextIndex === SEQUENCE.length) {
+          setCheatMode(true);
+          setIndex(0);
+          return;
+        }
+        setIndex(nextIndex);
+      } catch (_) {
         setIndex(0);
-        return;
       }
-      setIndex(nextIndex);
     };
 
     window.addEventListener('keydown', handleKeydown);

@@ -4,8 +4,8 @@
   --card: #1d2029;
   --text: #f4f4f6;
   --text-muted: #b7bac4;
-  --primary: #66c7f4;
-  --accent: #b58cff;
+  --primary: #2563eb;
+  --accent: #3b82f6;
   --border: #2a2e38;
 }
 
@@ -16,7 +16,7 @@ body.theme-light {
   --text: #1b1f2a;
   --text-muted: #5d6474;
   --primary: #2563eb;
-  --accent: #7c3aed;
+  --accent: #2563eb;
   --border: #e4e6ef;
 }
 
@@ -26,8 +26,8 @@ body.theme-dark {
   --card: #1d2029;
   --text: #f4f4f6;
   --text-muted: #b7bac4;
-  --primary: #66c7f4;
-  --accent: #b58cff;
+  --primary: #2563eb;
+  --accent: #3b82f6;
   --border: #2a2e38;
 }
 

@@ -11,7 +11,11 @@
 
 .btn-primary {
   background: var(--primary);
-  color: #0f1115;
+  color: #ffffff;
+}
+
+.company-banner .btn-primary {
+  color: #ffffff;
 }
 
 .btn-ghost {
@@ -51,11 +55,62 @@
   gap: 18px;
 }
 
+.skills-card-full {
+  grid-column: 1 / -1;
+}
+
 .skills-card {
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 16px;
   padding: 18px;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.skills-list-wide {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skills-list-wide .skill-item {
+  flex: 0 1 auto;
+  min-width: auto;
+}
+
+@media (max-width: 820px) {
+  .skills-card-full {
+    grid-column: auto;
+  }
+}
+
+.research-list {
+  margin-top: 0;
+}
+
+.skill-item {
+  display: grid;
+  place-items: center;
+  gap: 6px;
+  padding: 10px;
+  border-radius: 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text);
+}
+
+.skill-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
 }
 
 .newsletter {
@@ -90,20 +145,165 @@
   display: grid;
   grid-template-columns: minmax(240px, 1fr) minmax(280px, 1.2fr);
   gap: 32px;
+  align-items: start;
+}
+
+.contact-info h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.contact-intro {
+  margin-bottom: 1.25rem;
+  color: var(--text-muted, var(--text));
+  opacity: 0.9;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 1rem;
+}
+
+.contact-list-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  font-size: 1rem;
+}
+
+.contact-list-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.contact-list-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted, var(--text));
+  opacity: 0.85;
+}
+
+.contact-list-link,
+.contact-list-value {
+  font-weight: 500;
+  color: var(--text);
+}
+
+.contact-list-link {
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact-list-link:hover {
+  color: var(--accent);
 }
 
 .contact-form {
-  display: grid;
-  gap: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 100%;
+}
+
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-weight: 500;
+  color: var(--accent, #2563eb);
 }
 
 .contact-form input,
 .contact-form textarea {
+  width: 100%;
+  box-sizing: border-box;
   padding: 10px 12px;
   border-radius: 8px;
   border: 1px solid var(--border);
   background: var(--bg);
   color: var(--text);
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-form .btn-primary {
+  align-self: flex-start;
+  margin-top: 0.25rem;
+}
+
+.company-banner {
+  background: var(--surface);
+}
+
+.banner-inner {
+  display: grid;
+  grid-template-columns: minmax(240px, 1fr) minmax(320px, 1.5fr);
+  gap: 24px;
+  align-items: center;
+}
+
+.logo-marquee {
+  display: block;
+  overflow: hidden;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  padding: 14px 0;
+}
+
+.logo-track {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+  animation: logoScroll 25s linear infinite;
+}
+
+.logo-card {
+  width: 130px;
+  height: 70px;
+  background: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border: 1px solid var(--border);
+}
+
+.logo-card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@keyframes logoScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .status {
@@ -140,5 +340,20 @@
 @media (max-width: 820px) {
   .contact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .banner-inner {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "copy"
+      "logos";
+  }
+
+  .banner-copy {
+    grid-area: copy;
+  }
+
+  .logo-marquee {
+    grid-area: logos;
   }
 }

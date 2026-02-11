@@ -3,12 +3,13 @@ import { motion } from 'framer-motion';
 import experiences from '../data/experience.json';
 import Tag from '../ui/Tag';
 
-import bnpLogo from '../assets/logos/bnp.svg';
-import edfLogo from '../assets/logos/edf.svg';
-import ibmLogo from '../assets/logos/ibm.svg';
-import ministereLogo from '../assets/logos/ministere.svg';
-import ventePriveeLogo from '../assets/logos/venteprivee.svg';
-import helloBankLogo from '../assets/logos/hellobank.svg';
+import bnpLogo from '../assets/logos/bnp-logo.jpg';
+import helloBankLogo from '../assets/logos/hello-bank-logo.png';
+import ibmLogo from '../assets/logos/IBM_logo.png';
+import edfLogo from '../assets/logos/Logo-EDF.png';
+import ministereLogo from '../assets/logos/logo-ministere-des-armees.png';
+import ventePriveeLogo from '../assets/logos/VP-logo.png';
+import lbdLogo from '../assets/logos/lbd_logo.jpg';
 
 const logoMap = {
   'BNP PARIBAS — BDDF ENTREPRISE (Retail)': bnpLogo,
@@ -16,7 +17,8 @@ const logoMap = {
   'EDF — Retail': edfLogo,
   'IBM FRANCE LAB — CRÉDIT AGRICOLE': ibmLogo,
   'MINISTÈRE DES ARMÉES': ministereLogo,
-  'VENTE-PRIVEE.COM': ventePriveeLogo
+  'VENTE-PRIVEE.COM': ventePriveeLogo,
+  'LA BROSSE & DUPONT': lbdLogo
 };
 
 const AnimatedTimeline = () => {
@@ -36,7 +38,9 @@ const AnimatedTimeline = () => {
             <div className="timeline-content">
               <div className="timeline-header">
                 {logoMap[exp.company] && (
-                  <img src={logoMap[exp.company]} alt={exp.company} className="timeline-logo" />
+                  <div className="timeline-logo-box">
+                    <img src={logoMap[exp.company]} alt={exp.company} className="timeline-logo" />
+                  </div>
                 )}
                 <div>
                   <h3>{exp.company}</h3>
