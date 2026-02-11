@@ -200,6 +200,43 @@
   margin-bottom: 0;
 }
 
+/* --- Structured sections (contexte / positionnement / responsabilités / impact) --- */
+.timeline-section {
+  margin-top: 18px;
+}
+
+.timeline-section-title {
+  margin: 0 0 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.timeline-section-text {
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--text);
+}
+
+.timeline-responsibilities-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.timeline-responsibility-item {
+  margin-bottom: 4px;
+}
+
+.timeline-section.impact {
+  margin-top: 16px;
+}
+
 /* --- KPI block --- */
 .timeline-kpis {
   margin-top: 18px;
