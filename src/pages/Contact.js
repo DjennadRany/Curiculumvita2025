@@ -11,7 +11,10 @@ const Contact = () => {
     email: '',
     message: ''
   });
-  const [status, setStatus] = useState(null);
+
+  const [isSending, setIsSending] = useState(false);
+  const [isSent, setIsSent] = useState(false);
+  const [error, setError] = useState(null);
 
   const handleChange = (event) => {
     setFormData({ ...formData, [event.target.name]: event.target.value });
@@ -19,15 +22,22 @@ const Contact = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setStatus('loading');
+
+    setIsSending(true);
+    setIsSent(false);
+    setError(null);
 
     emailjs
       .sendForm('service_h93nh4r', 'template_nrecz44', event.target, 'AMNL3vQueeDMEXZEA')
       .then(() => {
-        setStatus('success');
+        setIsSending(false);
+        setIsSent(true);
         setFormData({ nom: '', prenom: '', telephone: '', email: '', message: '' });
       })
-      .catch(() => setStatus('error'));
+      .catch(() => {
+        setIsSending(false);
+        setError('Une erreur est survenue. Réessayez ou contactez-moi par email.');
+      });
   };
 
   const contactItems = [
@@ -117,15 +127,13 @@ const Contact = () => {
                 required
               />
             </label>
-            <button type="submit" className="btn btn-primary" disabled={status === 'loading'}>
-              {status === 'loading' ? 'Envoi…' : 'Envoyer'}
+            <button type="submit" className="btn btn-primary" disabled={isSending}>
+              {isSending ? 'Envoi…' : 'Envoyer'}
             </button>
-            {status === 'success' && (
+            {isSent && !error && (
               <span className="status success">Message envoyé avec succès.</span>
             )}
-            {status === 'error' && (
-              <span className="status error">Une erreur est survenue. Réessayez ou contactez-moi par email.</span>
-            )}
+            {error && <span className="status error">{error}</span>}
           </form>
         </div>
       </section>

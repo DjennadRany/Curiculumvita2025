@@ -23,18 +23,18 @@
 }
 
 .cv-section {
-  margin-top: 18px;
+  margin-top: 22px;
 }
 
 .cv-section h3 {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.6px;
 }
 
 .cv-item {
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
 .cv-item-header {
@@ -46,6 +46,105 @@
   font-size: 12px;
 }
 
+.cv-company {
+  margin: 0;
+  font-size: 15px;
+}
+
+.cv-role {
+  margin: 2px 0 4px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.cv-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+  font-size: 12px;
+  color: #444444;
+}
+
+.cv-meta-dates {
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background: #f3f4f6;
+  font-weight: 500;
+}
+
+.cv-meta-location {
+  font-style: italic;
+}
+
+.cv-description {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.cv-kpis {
+  margin-top: 4px;
+}
+
+.cv-kpis-title {
+  margin: 0 0 2px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.cv-kpis-list {
+  margin: 0;
+  padding-left: 16px;
+  font-size: 12px;
+}
+
+.cv-stack {
+  margin-top: 4px;
+}
+
+.cv-stack-title {
+  margin: 0 0 2px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.cv-stack-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.cv-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  font-size: 11px;
+}
+
+.cv-note {
+  margin-top: 4px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+/* Avoid overflow on print */
+.cv-print {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.cv-stack-tags,
+.cv-tag {
+  max-width: 100%;
+}
+
 @media print {
   body {
     background: #ffffff;
@@ -54,5 +153,14 @@
 
   .cv-print {
     padding: 0;
+    max-width: 100%;
+  }
+
+  .cv-item {
+    break-inside: avoid;
+  }
+
+  .cv-section {
+    break-inside: avoid;
   }
 }

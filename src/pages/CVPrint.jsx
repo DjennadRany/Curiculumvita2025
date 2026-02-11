@@ -16,19 +16,21 @@ const CVPrint = () => {
       <header className="cv-header">
         <h1>{profile.name}</h1>
         <h2>{profile.title}</h2>
-        <p>{profile.location} • {profile.languages}</p>
+        <p>
+          {profile.location} • {profile.languages}
+        </p>
         <p>{profile.github}</p>
       </header>
 
-      <section className="cv-section">
-        <h3>Résumé professionnel</h3>
+      <section className="cv-section" aria-labelledby="cv-summary-title">
+        <h3 id="cv-summary-title">Résumé professionnel</h3>
         {profile.summary.map((paragraph) => (
           <p key={paragraph}>{paragraph}</p>
         ))}
       </section>
 
-      <section className="cv-section">
-        <h3>Compétences techniques</h3>
+      <section className="cv-section" aria-labelledby="cv-skills-title">
+        <h3 id="cv-skills-title">Compétences techniques</h3>
         {skills.categories.map((category) => (
           <p key={category.title}>
             <strong>{category.title}:</strong> {category.items.join(', ')}
@@ -36,19 +38,69 @@ const CVPrint = () => {
         ))}
       </section>
 
-      <section className="cv-section">
-        <h3>Expérience professionnelle</h3>
+      <section
+        className="cv-section"
+        aria-labelledby="cv-experience-title"
+      >
+        <h3 id="cv-experience-title">Expérience professionnelle</h3>
         {experience.experiences.map((exp) => (
-          <div key={`${exp.company}-${exp.dates}`} className="cv-item">
-            <div className="cv-item-header">
-              <strong>{exp.company}</strong> — {exp.role} ({exp.dates})
-            </div>
-            {exp.location && <div className="cv-item-sub">{exp.location}</div>}
-            <p>{exp.description}</p>
-            {exp.kpis && <p><strong>KPI:</strong> {exp.kpis.join(', ')}</p>}
-            <p><strong>Stack:</strong> {exp.techTags.join(', ')}</p>
-            {exp.classifiedStack && <p><strong>Note:</strong> Environnement classifié — stack non divulguable.</p>}
-          </div>
+          <article
+            key={`${exp.company}-${exp.dates}`}
+            className="cv-item"
+            itemScope
+            itemType="https://schema.org/JobPosting"
+          >
+            <header className="cv-item-header">
+              <h2 className="cv-company" itemProp="hiringOrganization">
+                <span itemProp="name">{exp.company}</span>
+              </h2>
+              <h3 className="cv-role" itemProp="title">
+                {exp.role}
+              </h3>
+              <div className="cv-meta">
+                <span className="cv-meta-dates" itemProp="datePosted">
+                  {exp.dates}
+                </span>
+                {exp.location && (
+                  <span className="cv-meta-location" itemProp="jobLocation">
+                    {exp.location}
+                  </span>
+                )}
+              </div>
+            </header>
+
+            <p className="cv-description" itemProp="description">
+              {exp.description}
+            </p>
+
+            {exp.kpis && (
+              <section className="cv-kpis" aria-label="Résultats clés">
+                <h4 className="cv-kpis-title">KPI & résultats</h4>
+                <ul className="cv-kpis-list">
+                  {exp.kpis.map((kpi) => (
+                    <li key={kpi}>{kpi}</li>
+                  ))}
+                </ul>
+              </section>
+            )}
+
+            <section className="cv-stack" aria-label="Stack technique">
+              <h4 className="cv-stack-title">Stack & environnement</h4>
+              <div className="cv-stack-tags">
+                {exp.techTags.map((tech) => (
+                  <span key={tech} className="cv-tag">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </section>
+
+            {exp.classifiedStack && (
+              <p className="cv-note">
+                Environnement classifié — stack non divulguable.
+              </p>
+            )}
+          </article>
         ))}
       </section>
 
