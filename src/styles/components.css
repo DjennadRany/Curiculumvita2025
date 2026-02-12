@@ -272,8 +272,22 @@
   margin-top: 0.25rem;
 }
 
+/* Bandeau pleine largeur avec fond distinct du reste de la page */
 .company-banner {
-  background: var(--surface);
+  background: var(--banner-bg);
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding-left: max(var(--page-padding-min, 20px), env(safe-area-inset-left));
+  padding-right: max(var(--page-padding-min, 20px), env(safe-area-inset-right));
+  padding-top: var(--space-6, 24px);
+  padding-bottom: var(--space-6, 24px);
+  box-sizing: border-box;
+}
+
+.company-banner .banner-inner {
+  max-width: var(--container-max, 1080px);
+  margin: 0 auto;
 }
 
 .banner-inner {
@@ -288,8 +302,9 @@
   overflow: hidden;
   border-radius: 16px;
   border: 1px solid var(--border);
-  background: var(--bg);
+  background: var(--card);
   padding: 14px 0;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
 }
 
 .logo-track {
@@ -413,7 +428,7 @@
   gap: 8px;
   padding: 16px;
   border-radius: 12px;
-  background: var(--card);
+  background: var(--surface);
   border: 1px solid var(--border);
   text-decoration: none;
   color: inherit;

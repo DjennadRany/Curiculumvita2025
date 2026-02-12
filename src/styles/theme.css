@@ -2,6 +2,7 @@
   --bg: #0f1115;
   --surface: #171a21;
   --card: #1d2029;
+  --banner-bg: #1a1d26;
   --text: #f4f4f6;
   --text-muted: #b7bac4;
   --primary: #2563eb;
@@ -13,6 +14,7 @@ body.theme-light {
   --bg: #f6f7fb;
   --surface: #ffffff;
   --card: #ffffff;
+  --banner-bg: #e8eaf0;
   --text: #1b1f2a;
   --text-muted: #5d6474;
   --primary: #2563eb;
@@ -24,6 +26,7 @@ body.theme-dark {
   --bg: #0f1115;
   --surface: #171a21;
   --card: #1d2029;
+  --banner-bg: #1a1d26;
   --text: #f4f4f6;
   --text-muted: #b7bac4;
   --primary: #2563eb;
